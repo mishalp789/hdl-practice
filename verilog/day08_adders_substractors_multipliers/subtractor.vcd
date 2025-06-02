@@ -1,0 +1,42 @@
+$date
+	Mon Jun  2 14:54:32 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module subtractor_tb $end
+$var wire 4 ! diff [3:0] $end
+$var wire 1 " borrow $end
+$var reg 4 # a [3:0] $end
+$var reg 4 $ b [3:0] $end
+$scope module uut $end
+$var wire 4 % a [3:0] $end
+$var wire 4 & b [3:0] $end
+$var wire 4 ' diff [3:0] $end
+$var wire 1 " borrow $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b101 '
+b100 &
+b1001 %
+b100 $
+b1001 #
+0"
+b101 !
+$end
+#10
+b1110 !
+b1110 '
+1"
+b10 #
+b10 %
+#20
