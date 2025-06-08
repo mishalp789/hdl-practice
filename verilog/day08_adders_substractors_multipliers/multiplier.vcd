@@ -1,5 +1,5 @@
 $date
-	Mon Jun  2 14:54:32 2025
+	Sun Jun  8 21:52:09 2025
 $end
 $version
 	Icarus Verilog
@@ -8,13 +8,13 @@ $timescale
 	1s
 $end
 $scope module multiplier_tb $end
-$var wire 8 ! product [7:0] $end
+$var wire 8 ! prod [7:0] $end
 $var reg 4 " a [3:0] $end
 $var reg 4 # b [3:0] $end
 $scope module uut $end
 $var wire 4 $ a [3:0] $end
 $var wire 4 % b [3:0] $end
-$var wire 8 & product [7:0] $end
+$var wire 8 & prod [7:0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -23,18 +23,18 @@ $dumpall
 $end
 #0
 $dumpvars
-b1100 &
-b100 %
+b110 &
+b10 %
 b11 $
-b100 #
+b10 #
 b11 "
-b1100 !
+b110 !
 $end
 #10
-b1001 #
-b1001 %
-b1010001 !
-b1010001 &
-b1001 "
-b1001 $
+b101 #
+b101 %
+b100011 !
+b100011 &
+b111 "
+b111 $
 #20

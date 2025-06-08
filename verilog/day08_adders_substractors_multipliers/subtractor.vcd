@@ -1,5 +1,5 @@
 $date
-	Mon Jun  2 14:54:32 2025
+	Sun Jun  8 21:51:58 2025
 $end
 $version
 	Icarus Verilog
@@ -9,14 +9,12 @@ $timescale
 $end
 $scope module subtractor_tb $end
 $var wire 4 ! diff [3:0] $end
-$var wire 1 " borrow $end
-$var reg 4 # a [3:0] $end
-$var reg 4 $ b [3:0] $end
+$var reg 4 " a [3:0] $end
+$var reg 4 # b [3:0] $end
 $scope module uut $end
-$var wire 4 % a [3:0] $end
-$var wire 4 & b [3:0] $end
-$var wire 4 ' diff [3:0] $end
-$var wire 1 " borrow $end
+$var wire 4 $ a [3:0] $end
+$var wire 4 % b [3:0] $end
+$var wire 4 & diff [3:0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -25,18 +23,18 @@ $dumpall
 $end
 #0
 $dumpvars
-b101 '
-b100 &
-b1001 %
+b10 &
+b10 %
 b100 $
-b1001 #
-0"
-b101 !
+b10 #
+b100 "
+b10 !
 $end
 #10
-b1110 !
-b1110 '
-1"
-b10 #
-b10 %
+b101 #
+b101 %
+b101 !
+b101 &
+b1010 "
+b1010 $
 #20

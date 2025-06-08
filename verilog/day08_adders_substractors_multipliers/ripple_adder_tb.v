@@ -9,6 +9,7 @@ module ripple_adder_tb;
   initial begin
     $dumpfile("ripple_adder.vcd");
     $dumpvars(0, ripple_adder_tb);
+
     a = 4'b0101; b = 4'b0011; cin = 0; #10;
     a = 4'b1111; b = 4'b0001; cin = 0; #10;
     $finish;

@@ -1,3 +1,3 @@
-module subtractor(input [3:0] a, b, output [3:0] diff, output borrow);
-  assign {borrow, diff} = {1'b0, a} - {1'b0, b};
+module subtractor(input [3:0] a, input [3:0] b, output [3:0] diff);
+  assign diff = a - b;
 endmodule

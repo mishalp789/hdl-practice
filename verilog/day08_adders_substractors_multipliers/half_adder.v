@@ -1,7 +1,5 @@
-module half_adder(
-	input a,b,
-	output sum,carry
-);
-	assign sum = a|b;
-	assign carry = a&b;
+module half_adder(input a, input b, output sum, output carry);
+	assign sum = a ^ b;
+	assign carry  = a & b;
 endmodule
+
